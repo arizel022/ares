@@ -1,0 +1,131 @@
+.footer {
+    background-color: $dark900;
+    color: $light100;
+    padding-top: 50px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+
+    &__content {
+        max-width: 30%;
+
+        &:nth-child(3) {
+            border-bottom: 1px solid $light300;
+        }
+    }
+
+    &__logo {
+        display: block;
+        max-width: 414px;
+        margin: 0 auto 50px;
+    }
+
+    &__icon {
+        fill: $light100;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        font-family: "Nunito", sans-serif;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-family: "Play", sans-serif;
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        font-family: "Nunito", sans-serif;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $accent400;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    &__commun {
+        margin-bottom: 40px;
+    }
+
+    &__phones-item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__phones-link {
+        display: flex;
+        align-items: center;
+        display: block;
+        font-size: 22px;
+        line-height: 1.6;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $accent400;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+    }
+
+    &__bottom {
+        text-transform: uppercase;
+        color: $light300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #17191c;
+        padding: 20px 0;
+    }
+
+    &__bottom-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__bottom-item {
+        border-left: 2px solid $light300;
+        padding: 0 20px;
+
+        &:first-child {
+            margin-left: -15px;
+            border-left: 2px solid transparent;
+        }
+    }
+
+    &__bottom-link {
+        color: $accent400;
+        padding: 5px;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $light300;
+        }
+
+        &:active {
+            opacity: 0.5;
+        }
+
+
+    }
+}
