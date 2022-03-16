@@ -1,0 +1,24 @@
+.service {
+    padding: 100px 0;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 40px;
+    }
+
+    &__item {
+        position: relative;
+
+        &--l {
+            grid-row: span 3;
+        }
+        &--m {
+            grid-row: span 2;
+        }
+        &--s {
+            grid-row: span 1;
+        }
+    }
+}
